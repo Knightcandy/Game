@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>New Experience</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>Reign the BLOCK</h1>
+        </div>
+        <summary>Capture more blocks than that of other</summary>
+    </header>
+
+    <div class="statusSelect">
+        <section class="player1">
+            <h4>Choose an avatar</h4>
+            <div class="avatarSection">
+                <img src="img/1.gif"> <img src="img/2.gif"> <img src="img/3.gif"> <img src="img/4.gif">
+                <img src="img/5.gif"> <img src="img/6.gif"> <img src="img/7.gif"> <img src="img/8.gif">
+                <img src="img/9.gif"> <img src="img/10.gif">
+            </div>
+            <label for="player1Name" class="playerIcon1">Player </label><input type="text" placeholder="Username" id="player1Name">
+        </section>
+        <section class="player2">
+            <h4>Choose an avatar</h4>
+            <div class="avatarSection">
+                <img src="img/1.gif"> <img src="img/2.gif"> <img src="img/3.gif"> <img src="img/4.gif">
+                <img src="img/5.gif"> <img src="img/6.gif"> <img src="img/7.gif"> <img src="img/8.gif">
+                <img src="img/9.gif"> <img src="img/10.gif">
+            </div>
+            <label for="player2Name" class="playerIcon2">Player </label><input type="text" placeholder="Username" id="player2Name">
+        </section>
+    </div>
+
+    <div class="playNow">
+        <button class="playBtn playAgain" style="display: none;">Play Again!</button>
+        <button class="playBtn playStart" onclick="ok()">Play Now!</button>
+        <p class="errors"></p>
+    </div>
+
+    <main class="main" style="display: none">
+        <h5 class="info"></h5>
+        <table class="table">
+            <tr class="row1 r1">
+                <td class="border"></td>
+                <td class="hr c2">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c4">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c6">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c8">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c10">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c12">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c14">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c16">
+                    <hr>
+                </td>
+                <td class="border"></td>
+            </tr>
+            <tr class="row2 r2">
+                <td class="vr c1"><span></span></td>
+                <td class="blk2 clr"></td>
+                <td class="vr c3"><span></span></td>
+                <td class="blk4 clr"></td>
+                <td class="vr c5"><span></span></td>
+                <td class="blk6 clr"></td>
+                <td class="vr c7"><span></span></td>
+                <td class="blk8 clr"></td>
+                <td class="vr c9"><span></span></td>
+                <td class="blk10 clr"></td>
+                <td class="vr c11"><span></span></td>
+                <td class="blk12 clr"></td>
+                <td class="vr c13"><span></span></td>
+                <td class="blk14 clr"></td>
+                <td class="vr c15"><span></span></td>
+                <td class="blk16 clr"></td>
+                <td class="vr c17"><span></span></td>
+            </tr>
+            <tr class="row1 r3">
+                <td class="border"></td>
+                <td class="hr c2">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c4">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c6">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c8">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c10">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c12">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c14">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c16">
+                    <hr>
+                </td>
+                <td class="border"></td>
+            </tr>
+            <tr class="row2 r4">
+                <td class="vr c1"><span></span></td>
+                <td class="blk2 clr"></td>
+                <td class="vr c3"><span></span></td>
+                <td class="blk4 clr"></td>
+                <td class="vr c5"><span></span></td>
+                <td class="blk6 clr"></td>
+                <td class="vr c7"><span></span></td>
+                <td class="blk8 clr"></td>
+                <td class="vr c9"><span></span></td>
+                <td class="blk10 clr"></td>
+                <td class="vr c11"><span></span></td>
+                <td class="blk12 clr"></td>
+                <td class="vr c13"><span></span></td>
+                <td class="blk14 clr"></td>
+                <td class="vr c15"><span></span></td>
+                <td class="blk16 clr"></td>
+                <td class="vr c17"><span></span></td>
+            </tr>
+            <tr class="row1 r5">
+                <td class="border"></td>
+                <td class="hr c2">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c4">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c6">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c8">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c10">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c12">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c14">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c16">
+                    <hr>
+                </td>
+                <td class="border"></td>
+            </tr>
+            <tr class="row2 r6">
+                <td class="vr c1"><span></span></td>
+                <td class="blk2 clr"></td>
+                <td class="vr c3"><span></span></td>
+                <td class="blk4 clr"></td>
+                <td class="vr c5"><span></span></td>
+                <td class="blk6 clr"></td>
+                <td class="vr c7"><span></span></td>
+                <td class="blk8 clr"></td>
+                <td class="vr c9"><span></span></td>
+                <td class="blk10 clr"></td>
+                <td class="vr c11"><span></span></td>
+                <td class="blk12 clr"></td>
+                <td class="vr c13"><span></span></td>
+                <td class="blk14 clr"></td>
+                <td class="vr c15"><span></span></td>
+                <td class="blk16 clr"></td>
+                <td class="vr c17"><span></span></td>
+            </tr>
+            <tr class="row1 r7">
+                <td class="border"></td>
+                <td class="hr c2">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c4">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c6">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c8">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c10">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c12">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c14">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c16">
+                    <hr>
+                </td>
+                <td class="border"></td>
+            </tr>
+            <tr class="row2 r8">
+                <td class="vr c1"><span></span></td>
+                <td class="blk2 clr"></td>
+                <td class="vr c3"><span></span></td>
+                <td class="blk4 clr"></td>
+                <td class="vr c5"><span></span></td>
+                <td class="blk6 clr"></td>
+                <td class="vr c7"><span></span></td>
+                <td class="blk8 clr"></td>
+                <td class="vr c9"><span></span></td>
+                <td class="blk10 clr"></td>
+                <td class="vr c11"><span></span></td>
+                <td class="blk12 clr"></td>
+                <td class="vr c13"><span></span></td>
+                <td class="blk14 clr"></td>
+                <td class="vr c15"><span></span></td>
+                <td class="blk16 clr"></td>
+                <td class="vr c17"><span></span></td>
+            </tr>
+            <tr class="row1 r9">
+                <td class="border"></td>
+                <td class="hr c2">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c4">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c6">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c8">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c10">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c12">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c14">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c16">
+                    <hr>
+                </td>
+                <td class="border"></td>
+            </tr>
+            <tr class="row2 r10">
+                <td class="vr c1"><span></span></td>
+                <td class="blk2 clr"></td>
+                <td class="vr c3"><span></span></td>
+                <td class="blk4 clr"></td>
+                <td class="vr c5"><span></span></td>
+                <td class="blk6 clr"></td>
+                <td class="vr c7"><span></span></td>
+                <td class="blk8 clr"></td>
+                <td class="vr c9"><span></span></td>
+                <td class="blk10 clr"></td>
+                <td class="vr c11"><span></span></td>
+                <td class="blk12 clr"></td>
+                <td class="vr c13"><span></span></td>
+                <td class="blk14 clr"></td>
+                <td class="vr c15"><span></span></td>
+                <td class="blk16 clr"></td>
+                <td class="vr c17"><span></span></td>
+            </tr>
+            <tr class="row1 r11">
+                <td class="border"></td>
+                <td class="hr c2">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c4">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c6">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c8">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c10">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c12">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c14">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c16">
+                    <hr>
+                </td>
+                <td class="border"></td>
+            </tr>
+            <tr class="row2 r12">
+                <td class="vr c1"><span></span></td>
+                <td class="blk2 clr"></td>
+                <td class="vr c3"><span></span></td>
+                <td class="blk4 clr"></td>
+                <td class="vr c5"><span></span></td>
+                <td class="blk6 clr"></td>
+                <td class="vr c7"><span></span></td>
+                <td class="blk8 clr"></td>
+                <td class="vr c9"><span></span></td>
+                <td class="blk10 clr"></td>
+                <td class="vr c11"><span></span></td>
+                <td class="blk12 clr"></td>
+                <td class="vr c13"><span></span></td>
+                <td class="blk14 clr"></td>
+                <td class="vr c15"><span></span></td>
+                <td class="blk16 clr"></td>
+                <td class="vr c17"><span></span></td>
+            </tr>
+            <tr class="row1 r13">
+                <td class="border"></td>
+                <td class="hr c2">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c4">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c6">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c8">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c10">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c12">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c14">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c16">
+                    <hr>
+                </td>
+                <td class="border"></td>
+            </tr>
+            <tr class="row2 r14">
+                <td class="vr c1"><span></span></td>
+                <td class="blk2 clr"></td>
+                <td class="vr c3"><span></span></td>
+                <td class="blk4 clr"></td>
+                <td class="vr c5"><span></span></td>
+                <td class="blk6 clr"></td>
+                <td class="vr c7"><span></span></td>
+                <td class="blk8 clr"></td>
+                <td class="vr c9"><span></span></td>
+                <td class="blk10 clr"></td>
+                <td class="vr c11"><span></span></td>
+                <td class="blk12 clr"></td>
+                <td class="vr c13"><span></span></td>
+                <td class="blk14 clr"></td>
+                <td class="vr c15"><span></span></td>
+                <td class="blk16 clr"></td>
+                <td class="vr c17"><span></span></td>
+            </tr>
+            <tr class="row1 r15">
+                <td class="border"></td>
+                <td class="hr c2">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c4">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c6">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c8">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c10">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c12">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c14">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c16">
+                    <hr>
+                </td>
+                <td class="border"></td>
+            </tr>
+            <tr class="row2 r16">
+                <td class="vr c1"><span></span></td>
+                <td class="blk2 clr"></td>
+                <td class="vr c3"><span></span></td>
+                <td class="blk4 clr"></td>
+                <td class="vr c5"><span></span></td>
+                <td class="blk6 clr"></td>
+                <td class="vr c7"><span></span></td>
+                <td class="blk8 clr"></td>
+                <td class="vr c9"><span></span></td>
+                <td class="blk10 clr"></td>
+                <td class="vr c11"><span></span></td>
+                <td class="blk12 clr"></td>
+                <td class="vr c13"><span></span></td>
+                <td class="blk14 clr"></td>
+                <td class="vr c15"><span></span></td>
+                <td class="blk16 clr"></td>
+                <td class="vr c17"><span></span></td>
+            </tr>
+            <tr class="row1 r17">
+                <td class="border"></td>
+                <td class="hr c2">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c4">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c6">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c8">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c10">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c12">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c14">
+                    <hr>
+                </td>
+                <td class="border"></td>
+                <td class="hr c16">
+                    <hr>
+                </td>
+                <td class="border"></td>
+            </tr>
+        </table>
+    </main>
+
+    <div class="status" style="display: none">
+        <section class="player1">
+            <label class="playerIcon1">Player </label>
+            <div class="playerAvatar1" style="background-image: url('./img/default1.gif');"></div>
+            <p class="playerUsername1"></p>
+            <div>Score</div>
+            <div class="playerScore1">0</div>
+        </section>
+        <section class="player2">
+            <label class="playerIcon2">Player </label>
+            <div class="playerAvatar2" style="background-image: url('./img/default2.gif');"></div>
+            <p class="playerUsername2"></p>
+            <div>Score</div>
+            <div class="playerScore2">0</div>
+        </section>
+    </div>
+
+    <footer>
+        <p> &copy; <strong>KnightCandy</strong> Creations
+            <time><script>document.write(new Date().getFullYear())</script></time>
+            <img src="img/nepalflag.gif" style="width: 10px;height:10px; border: none;" alt="Nepal Flag" title="Nepali flag">
+        </p>
+    </footer>
+</body>
+
+</html>

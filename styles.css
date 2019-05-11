@@ -1,0 +1,333 @@
+/*Base Section*/
+
+html,
+body {
+    color: #fff;
+    margin: 0;
+}
+
+:focus {
+    outline: none;
+}
+
+::-moz-focus-inner {
+    border: 0;
+}
+
+
+/*Header Section*/
+
+header {
+    padding: 10px;
+    border-bottom: 4px solid #e5671e;
+    background-color: #1d0528;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+header div {
+    display: flex;
+    justify-content: space-around;
+}
+
+header div h1 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: 800;
+    font-size: 60px;
+}
+
+
+/*Avatar Section Division*/
+
+.statusSelect {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 20px;
+}
+
+h4 {
+    margin: 5px;
+}
+
+.statusSelect section {
+    flex-basis: 20%;
+    padding: 5px;
+}
+
+.statusSelect .avatarSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px;
+}
+
+img {
+    width: 30px;
+    height: 30px;
+    border: 3px solid #fff;
+    border-radius: 20%;
+    margin: 1px;
+}
+
+.borderCircle {
+    border-radius: 50%;
+    border-color: hotpink;
+}
+
+input {
+    border: 2px solid #fff;
+    border-radius: 5%;
+    margin: 2% auto;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+input:focus {
+    border-color: #a11dd0;
+}
+
+.okBtn {
+    margin: auto;
+    width: 60px;
+    display: block;
+    background-color: #fff;
+    color: rgba(80, 30, 0, 0.7);
+}
+
+
+/*Play Button Section*/
+
+.playNow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50px;
+    margin: 2px;
+}
+
+.playBtn {
+    width: 10%;
+    height: 40px;
+    background-color: dodgerblue;
+    color: #fff;
+    font-weight: 600;
+}
+
+.errors {
+    margin: 0 auto;
+    height: 10px;
+    color: red;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
+/*Main Section Division*/
+
+.info {
+    color: #000;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+    text-transform: capitalize;
+}
+
+table {
+    width: 60%;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 10%;
+}
+
+.row1 .border {
+    width: 10px;
+    height: 10px;
+    background: linear-gradient(45deg, #37d90e, #FF69B4, #e5671e);
+    /* border: 3px solid #fff; */
+    border: none;
+    border-radius: 50%;
+}
+
+.row1 .hr {
+    width: 30px;
+    height: 10px;
+    padding: 0;
+    border: 1px solid #fff;
+}
+
+hr {
+    border: 4px solid #ddd;
+    background-color: #ddd;
+
+    transition: all 500ms;
+}
+
+.row2 .vr {
+    width: 10px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #fff;
+    text-align: center;
+}
+
+.row2 .vr span {
+    border: 4px solid #ddd;
+    background-color: #ddd;
+    transition: all 500ms;
+}
+
+.row2 .vr span:hover,
+hr:hover {
+    border-color: rgba(250, 225, 12, 0.86);
+    background-color: rgba(250, 225, 12, 0.86);
+}
+
+.row2 td {
+    box-sizing: border-box;
+}
+
+.row2 td:nth-child(even) {
+    border: 1px solid rgba(180, 180, 180, 0.1);
+    border-radius: 15%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/*Status Section Division*/
+
+.status {
+    display: flex;
+    justify-content: space-between;
+    margin: 2%;
+    padding: 1rem;
+    width: 93%;
+    position: fixed;
+    top: 40%;
+    z-index: -1;
+}
+
+div section {
+    border: 2px solid #fff;
+    border-radius: 5%;
+    padding: 8px;
+    flex-basis: 12%;
+    text-align: center;
+    font-weight: bolder;
+    background: rgba(29, 5, 40, 0.87);
+    /*    background: linear-gradient( #1d0528, rgba(80, 30, 0, 0.7));*/
+}
+
+.playerAvatar1,
+.playerAvatar2 {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 5px solid rgb(0, 255, 0);
+    border-radius: 30%;
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.status section p {
+    margin: 0;
+    color: #e5671e;
+    text-transform: capitalize;
+}
+
+.wobble {
+    border-radius: 50%;
+    padding: 10px;
+
+    animation: wiggle 0.3s 2 linear;
+    /*
+    animation-name: wiggle;
+    animation-duration: 2s;
+    animation-delay: 0.2s;
+    animation-iteration-count: 2;
+    animation-timing-function: linear;
+*/
+}
+
+@keyframes wiggle {
+    0% {
+        transform: rotate(4deg);
+    }
+    50% {
+        transform: rotate(-4deg);
+    }
+    100% {
+        transform: rotate(4deg);
+    }
+}
+
+.winner1 {
+    animation-name: win1;
+    animation-delay: 0.2s;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes win1 {
+    0% {
+        transform: translateX(0) scale(1) rotateY(0);
+    }
+    25% {
+        transform: translateX(150px) scale(1.1) rotateY(180deg);
+    }
+    50% {
+        transform: translateX(300x) scale(1.2) rotateY(360deg);
+    }
+    75% {
+        transform: translateX(450px) scale(1.3) rotateX(180deg);
+    }
+    100% {
+        transform: translateX(600px) scale(1.4) rotateX(360deg);
+    }
+}
+
+.winner2 {
+    animation-name: win2;
+    animation-delay: 0.2s;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes win2 {
+    0% {
+        transform: translateX(0) scale(1) rotateY(0);
+    }
+    25% {
+        transform: translateX(-150px) scale(1.1) rotateY(180deg);
+    }
+    50% {
+        transform: translateX(-300x) scale(1.2) rotateY(360deg);
+    }
+    75% {
+        transform: translateX(-450px) scale(1.3) rotateX(180deg);
+    }
+    100% {
+        transform: translateX(-600px) scale(1.4) rotateX(360deg);
+    }
+}
+
+
+/*Footer Section Division*/
+
+footer {
+    border-top: 5px solid #e5671e;
+    text-align: center;
+    background-color: #1d0528;
+    width: 100%;
+    height: 45px;
+    position: fixed;
+    bottom: 0;
+}
